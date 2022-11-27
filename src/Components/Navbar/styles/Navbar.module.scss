@@ -1,0 +1,11 @@
+.navbar{
+    margin: 0;
+    padding: 1rem;
+    min-height: 4rem;
+    box-shadow: 0 13px 16px rgba(0,0,0,.1);
+    max-width: 100%;
+    background-color: #3a345e;
+    & .logo{
+        margin-left: 2rem;
+    }
+}

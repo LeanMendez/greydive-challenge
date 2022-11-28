@@ -1,0 +1,22 @@
+@import "./Globals.scss";
+
+.container{
+    margin: 2rem;
+    & .title{
+        font-size: $title-M;
+        color: $black-color;
+    }
+}
+
+.link, a{
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    font-size: $text-M;
+    color: $black-color;
+    text-transform: uppercase;
+    list-style: decimal-leading-zero;
+    & :active{
+        color: $black-color;
+    }
+}
+

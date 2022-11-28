@@ -1,11 +1,35 @@
+@import '../../../styles/Globals.scss';
+
 .navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     margin: 0;
     padding: 1rem;
     min-height: 4rem;
-    box-shadow: 0 13px 16px rgba(0,0,0,.1);
+    box-shadow: 0 16px 12px #0000001a;
     max-width: 100%;
     background-color: #3a345e;
     & .logo{
         margin-left: 2rem;
     }
+    & .grouplink{
+        display: flex;
+        flex-direction: row;
+        margin-right: 8rem;
+        gap: 4rem;
+        & .link, a{
+            font-size: $text-M;
+            text-decoration: none;
+            list-style: none;
+            color: $light-color;
+            text-transform: uppercase;
+            & :hover, :visited{
+                color: $light-color;
+                text-decoration: none;
+            }
+        }
+    }
+
 }

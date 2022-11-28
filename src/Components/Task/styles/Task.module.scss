@@ -1,3 +1,5 @@
+@import '../../../styles/Globals.scss';
+
 .task{
     font-family: 'Lato', sans-serif;
     margin-block: 0.5rem;
@@ -5,8 +7,8 @@
     flex-direction: column;
     max-width: 67%;
     min-height: 13rem;
-    background-color: #48416b;
-    color: rgb(226, 225, 225);
+    background-color: $mid-color;
+    color: $light-color;
     border-radius: 1rem;
     box-shadow: 0 6px 16px rgba(0,0,0,.1);
     //padding: 1rem;
@@ -15,8 +17,8 @@
         border-radius: 0.5rem;
         padding: 1rem;
         margin: 0.5rem 1rem;
-        color: #edbf8c;
-        font-size: 1.85rem;
+        color: $accent-color;
+        font-size: $subtitle-S;
         font-weight: 700;
         letter-spacing: 3px;
     }
@@ -24,26 +26,26 @@
         margin: 0.5rem 1.5rem 1.5rem 1.5rem;
         border-radius: 0.5rem;
         padding: 1rem;
-        background-color: #373159;
+        background-color: $dark-color;
     & .description{
         margin: 1rem 1rem 0 1rem;
         margin: 1rem;
-        font-size: 1.2rem;
+        font-size: $text-M
     }
     & .response{
-        font-size: 1.2rem;
+        font-size: $text-M;
         margin: 1rem;
         & .answer{
-            color: #edbf8c;
+            color: $accent-color;
         }
     }
     & .duration{
-        font-size: 1.2rem;
+        font-size: $text-M;
         margin: 1rem 1rem;
         & .time{
             font-weight: bold;
-            font-size: 0.9rem;
-            color: #edbf8c;
+            font-size: $text-S;
+            color: $accent-color;
             }
     }
     }

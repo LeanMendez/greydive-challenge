@@ -1,33 +1,36 @@
+@import '../../../styles/Globals.scss';
+
+
 .container{
-    color: rgb(226, 225, 225);
+    color: $light-color;
+    background-color: $dark-color;
     font-family: 'Lato', sans-serif;
     display: flex;
     flex-direction: column;
     margin: 0;
-    //min-width: 100%;
     padding: 2rem 0 0 4rem;
     & .title{
-        font-size: 3.5rem;
+        font-size: $title-L;
         letter-spacing: 3px;
-        color: #edbf8c;
-        font-family: 'Fredoka One', cursive;
+        color: $accent-color;
+        font-family: 'lato', sans-serif;
         font-weight: 700;
         margin-block: 1rem;
     }
     & .subtitlesContainer{
-        background-color: #48416b;
+        background-color: $mid-color;
         padding: 1.5rem;
         max-width: 65%;
         margin-block: 2rem;
         border-radius: 1rem;
         box-shadow: 0 6px 16px rgba(0,0,0,.1);
         & .subtitle{
-            font-size: 1.5rem;
+            font-size: $subtitle-S;
             margin: 0.5rem;
             letter-spacing: 2px;
         }
         & .description{
-            font-size: 1.3rem;
+            font-size: $description-M;
             font-style: italic;
             font-weight: 100;
             margin: 0.5rem;
@@ -38,30 +41,29 @@
         max-width: 75%;
     }
     & .transcriptionContainer{
-        background-color: #edbf8c;
-        margin-block: 2rem;
-        padding: 2.5rem;
         display: flex;
         flex-direction: column;
+        background-color: $accent-color;
+        margin-block: 2rem;
+        padding: 2.5rem;
         max-width: 60%;
         min-height: 13rem;
         border-radius: 1rem;
         box-shadow: 0 6px 16px rgba(0,0,0,.1);
         & .transcription{
-            font-size: 2.3rem;
+            font-size: $title-M;
             margin: 0.5rem;
             letter-spacing: 2px;
-            color:  #48416b;
+            color:  $mid-color;
         }
         & .transcriptionContent{
             margin: 1rem 1rem 0 1rem;
-            font-size: 1.2rem;
+            font-size: $text-M;
             max-width: 75%;
             max-height: 15rem;
             overflow: scroll;
             line-height: 22.4px;
-            color: #373159;
-            //align-self: center;
+            color: $dark-color;
         }
     }
     

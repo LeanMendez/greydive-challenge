@@ -1,6 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+//variables colores
+$black-color: #1b1b1b;
+$dark-color:#373159;
+$mid-color: #48416b ;
+$accent-color: #edbf8c;
+$light-color:#cdcdcd;
+
+
+//font sizes
+$title-L: 3.5rem;
+$title-M: 2.3rem;
+$subtitle-L: 2.31rem;
+$subtitle-M: 1.72rem;
+$subtitle-S: 1.52rem;
+$description-M: 1.5rem;
+$text-M: 1.2rem;
+$text-S:0.9rem;
+
+
 body{
+    box-sizing: border-box;
     margin: 0;
-    //padding-inline: 3rem;
-    background-color: #373159;;
+    background-color: $light-color;
+    font-family: 'lato', sans-serif;
 }
+
+
+
+
+

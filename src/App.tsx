@@ -1,17 +1,20 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
+import {Navbar} from "./Components/Navbar";
 import Home from "./Pages/Home";
-import Pruebas from "./Pages/Pruebas";
+import NotFound from "./Pages/NotFound";
+import Tests from "./Pages/Tests";
 import "./styles/Globals.scss";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route element={<Home />} path="/" />
-          <Route element={<Pruebas />} path="/pruebas/:cliente" />
-          <Route element={<h1>ROUTE NOT FOUND</h1>} path="*" />
+          <Route element={<Tests />} path="/tests/:cliente" />
+          <Route element={<NotFound />} path="*" />
         </Routes>
       </BrowserRouter>
     </div>

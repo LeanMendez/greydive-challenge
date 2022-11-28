@@ -28,9 +28,6 @@ interface IContentType {
 }
 
 const MainContent: React.FC<IContentType> = ({data}) => {
-  // eslint-disable-next-line no-console
-  //console.log(data);
-
   return (
     <main className={styles.container}>
       <h1 className={styles.title}>

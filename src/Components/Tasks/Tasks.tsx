@@ -8,9 +8,6 @@ interface dataTasks {
 }
 
 const Tasks: React.FC<dataTasks> = ({dataTasks}) => {
-  // eslint-disable-next-line no-console
-  console.log(dataTasks.preguntas);
-
   return (
     <main className={styles.container}>
       <>
